@@ -1,0 +1,26 @@
+.button {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  padding: 18px 26px;
+  width: fit-content;
+  text-decoration: none;
+  @include fontRold;
+  font-size: 24px;
+  line-height: $lineHeight;
+  outline: none;
+  color: inherit;
+  background: #fff;
+  -webkit-tap-highlight-color: transparent;
+  @media ($md-max) {
+    padding: 14px 25px;
+    font-size: 20px;
+  }
+  @media ($xs-max) {
+    font-size: 15px;
+  }
+  &__text {
+    position: relative;
+    z-index: 9;
+  }
+}

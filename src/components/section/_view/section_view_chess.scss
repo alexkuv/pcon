@@ -1,0 +1,134 @@
+.section_view_chess {
+  .section__item {
+    margin-top: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #9c9c9c;
+    @media ($md-max) {
+      margin-top: 40px;
+      padding-bottom: 40px;
+    }
+    @media ($xs-max) {
+      margin-top: 30px;
+      padding-bottom: 30px;
+    }
+    &:nth-child(odd) {
+      .section__img-wrap {
+        @media ($sm-min) {
+          order: 1;
+        }
+      }
+    }
+  }
+  .section__img-wrap {
+    background: #C8C7CC;
+    max-height: 520px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+    @media ($md-max) {
+      max-height: 400px;
+    }
+    @media ($xs-max) {
+      max-height: 300px;
+    }
+  }
+  .section__item-title {
+    font-size: 45px;
+    line-height: 100%;
+    letter-spacing: -0.025em;
+    color: $secondaryColor;
+    margin-bottom: 30px;
+    @media ($md-max) {
+      font-size: 30px;
+    }
+    @media ($xs-max) {
+      font-size: 20px;
+    }
+  }
+  .section__item-text {
+    font-size: 25px;
+    line-height: $lineHeight;
+    margin-bottom: 30px;
+    @media ($md-max) {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    @media ($xs-max) {
+      margin-bottom: 15px;
+    }
+    >ul {
+      list-style-type: none;
+      li {
+        padding-left: 20px;
+        position: relative;
+        &:after {
+          position: absolute;
+          content: "";
+          width: 10px;
+          height: 1px;
+          background-color: $accentColor;
+          left: 0;
+          top: 20px;
+          @media ($md-max) {
+            top: 15px;
+          }
+        }
+      }
+    }
+  }
+  .section__property {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: $lineHeight;
+    margin-bottom: 60px;
+    @media ($md-max) {
+      font-size: 20px;
+      margin-bottom: 40px;
+    }
+    @media ($xs-max) {
+      margin-bottom: 30px;
+    }
+  }
+  .section__btns {
+    display: flex;
+    @media ($md-max) {
+      flex-direction: column;
+    }
+  }
+  .button {
+    white-space: nowrap;
+    @media ($lg-min) {
+      &:not(:last-child) {
+        margin-right: 30px;
+      margin-bottom: 0;
+      }
+    }
+    @media ($md-max) {
+      white-space: normal;
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .section__disclaimer {
+    font-size: 16px;
+    margin-top: 75px;
+    background-color: $secondaryColor;
+    color: #fff;
+    padding: 30px 0;
+    @media ($md-max) {
+      margin-top: 55px;
+    }
+    @media ($xs-max) {
+      margin-top: 40px;
+    }
+  }
+  .section__disclaimer-content {
+    @media ($sm-min) {
+      max-width: 1100px;
+    }
+  }
+}

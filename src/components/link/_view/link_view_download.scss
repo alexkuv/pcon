@@ -1,0 +1,43 @@
+.link_view_download {
+  color: inherit;
+  display: flex;
+  width: fit-content;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: $lineHeight;
+  @media ($md-max) {
+    font-size: 20px;
+  }
+  @media ($xs-max) {
+    font-size: 15px;
+  }
+  .link__text {
+    position: relative;
+    margin-left: 10px;
+    &::before {
+      position: absolute;
+      bottom: 0;
+      content: "";
+      width: 100%;
+      height: 1px;
+      border-bottom: 1px dashed;
+      border-bottom-color: rgba(255, 255, 255, 0.4);
+    }
+  }
+  &:hover {
+    color: #fff;
+    .link__text {
+      &::before {
+        border-bottom-style: solid;
+      }
+    }
+  }
+  &:active {
+    text-decoration: none;
+    .link__text {
+      &::before {
+        border-bottom-style: solid;
+      }
+    }
+  }
+}

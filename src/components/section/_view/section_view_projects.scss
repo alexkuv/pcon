@@ -1,0 +1,11 @@
+.section_view_projects {
+  .section__content {
+    margin-top: 60px;
+    @media ($md-max) {
+      margin-top: 40px;
+    }
+    @media ($xs-max) {
+      margin-top: 20px;
+    }
+  }
+}

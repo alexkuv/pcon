@@ -1,0 +1,27 @@
+.button_view_order {
+  color: #fff;
+  background:linear-gradient(-45deg, transparent 15px, $accentColor 0);
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:linear-gradient(-45deg, transparent 15px, $accentHover 0);
+    transition: all $animate;
+    transition-property: opacity, visibility;
+    opacity: 0;
+    visibility: hidden;
+  }
+  &:hover,
+  &:active,
+  &:focus {
+    &::after {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}

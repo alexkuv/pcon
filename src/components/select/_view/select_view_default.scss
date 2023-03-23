@@ -1,0 +1,81 @@
+.select_view_default {
+  position: relative;
+  &[data-state="active"] {
+    .select__content {
+      opacity: 1;
+      visibility: visible;
+    }
+    .select__title {
+      border: 1px solid $secondaryColor;
+    }
+    .select__title::after {
+      transform: rotateX(-180deg);
+    }
+  }
+  .select__title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid $textColor;
+    cursor: pointer;
+    &::after {
+      position: absolute;
+      content: "";
+      top: 48%;
+      right: 20px;
+      width: 10px;
+      height: 6px;
+      background-image: url("../../../images/field_arr.svg");
+      transition: transform $animate;
+    }
+    &:hover {
+      border: 1px solid $secondaryColor;
+    }
+    > * {
+      max-width: 94%;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+  .select__content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid $secondaryColor;
+    border-top: none;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 8;
+    padding: 15px 0;
+    transition: all $animate;
+    transition-property: opacity, visibility;
+  }
+  select {
+    display: none;
+  }
+  .select__label {
+    cursor: pointer;
+    padding: 5px 16px;
+    transition: all $animate;
+    transition-property: color, background-color;
+    &:hover {
+      color: $accentColor;
+      background-color: #fff;
+    }
+    &[data-selected="true"] {
+      color: #fff !important;
+      background-color: $secondaryColor !important;
+    }
+  }
+  .select__input {
+    display: none;
+    &:checked + label {
+      background-color: $secondaryColor;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+@mixin fontRegular {
+  font-family: "proximanova";
+	font-weight: 400;
+	font-style: normal;
+}
+
+@mixin fontRold {
+  font-family: "proximanova";
+	font-weight: 700;
+	font-style: normal;
+}
+
+$accentColor: #A72322;
+$accentHover: #E62A32;
+$accentActive: #680F0F;
+$accentFocus: #860100;
+$secondaryColor: #0D4F81;
+$secondaryActive: #0A3B61;
+$secondaryDark: #214C86;
+$textColor: #465A64;
+
+$animate: .3s ease-in-out;
+
+$lineHeight: 150%;
+
+$xl-min:'min-width: 1640px';
+$lg-only:'(min-width: 1280px) and (max-width: 1639px)';
+$lg-max:'max-width: 1639px';
+$xl-min:'min-width: 1640px';
+$lg-min:'min-width: 1280px';
+$md-only:'(min-width: 992px) and (max-width: 1279px)';
+$md-max:'max-width: 1279px';
+$md-min:'min-width: 992px';
+$sm-only:'(min-width: 768px) and (max-width: 991px)';
+$sm-max:'max-width: 991px';
+$sm-min:'min-width: 768px';
+$xs-max:'max-width: 767px';

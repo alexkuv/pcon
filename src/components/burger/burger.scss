@@ -1,0 +1,17 @@
+  .burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 19px;
+    height: 16px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    span {
+      width: 100%;
+      height: 2px;
+      background-color: $secondaryColor;
+    }
+    @media ($lg-min) {
+			display: none;
+		}
+  }

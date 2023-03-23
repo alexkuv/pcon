@@ -1,0 +1,1 @@
+import "./_view/video_view_16-9.scss";

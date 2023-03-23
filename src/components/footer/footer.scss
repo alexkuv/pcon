@@ -1,0 +1,115 @@
+.footer {
+  padding-bottom: 30px;
+  .footer__wrap {
+    grid-row-gap: 40px;
+    @media ($xs-max) {
+      grid-row-gap: 30px;
+    }
+  }
+  .footer__col {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__col_first {
+    grid-column: span 3;
+    @media ($md-max) {
+      grid-column: span 4;
+    }
+  }
+  .footer__col_nav {
+    grid-column: span 2;
+    @media ($md-max) {
+      grid-column: span 3;
+    }
+  }
+  .footer__col_contacts {
+    grid-column: span 3;
+    @media ($md-max) {
+      grid-column: span 5;
+    }
+  }
+  .footer__col_links {
+    grid-column: span 4;
+    @media ($md-max) {
+      grid-column: 1 / -1;
+    }
+  }
+  .footer__logo {
+    max-width: 315px;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 35px;
+  }
+  .footer__soc {
+    display: flex;
+  }
+  .footer__soc-item {
+    text-decoration: none;
+    color: $secondaryColor;
+    transition: color $animate;
+    max-width: 32px;
+    &:not(:last-child) {
+      margin-right: 32px;
+    }
+    &:hover {
+      color: $accentHover;
+    }
+    img,
+    svg {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+  .footer__nav {
+    list-style-type: none;
+  }
+  .footer__nav-item {
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+  .footer__contacts {
+    line-height: $lineHeight;
+    p {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+        @media ($xs-max) {
+          margin-bottom: 15px;
+        }
+      }
+    }
+    a {
+      color: $secondaryColor;
+      transition: color $animate;
+      &:hover {
+        color: $accentHover;
+        text-decoration: none;
+      }
+    }
+  }
+  .footer__links {
+    line-height: 19px;
+    p {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+        @media ($xs-max) {
+          margin-bottom: 15px;
+        }
+      }
+    }
+    a {
+      font-size: 16px;
+      color: $textColor;
+      transition: color $animate;
+      &:hover {
+        color: $accentHover;
+        text-decoration: none;
+      }
+    }
+  }
+  .footer__copyright {
+    margin-top: 40px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}

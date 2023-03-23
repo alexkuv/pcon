@@ -1,0 +1,7 @@
+.accordion {
+  &__body {
+    overflow: hidden;
+    height: 0;
+    transition: height $animate;
+  }
+}

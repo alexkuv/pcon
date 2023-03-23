@@ -1,0 +1,143 @@
+.section_view_main {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 140px;
+  position: relative;
+  @media ($md-max) {
+    padding-top: 80px;
+  }
+  @media ($sm-only) {
+    padding-top: 50px;
+  }
+  @media ($xs-max) {
+    padding-top: 35px;
+  }
+  .section__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.4;
+  }
+  .section__inner {
+    position: relative;
+    z-index: 1;
+  }
+  .section__head {
+    padding-bottom: 247px;
+    @media ($md-max) {
+      padding-bottom: 55px;
+    }
+    @media ($xs-max) {
+      padding-bottom: 35px;
+    }
+  }
+  .section__title {
+    margin-bottom: 15px;
+  }
+  .section__content {
+    @media ($md-max) {
+      grid-template-columns: none;
+      grid-row-gap: 55px;
+    }
+    @media ($xs-max) {
+      grid-row-gap: 40px;
+    }
+  }
+  .section__subtitle {
+    h2 {
+      color: #FFFFFF;
+      font-weight: 400;
+      font-size: 35px;
+      line-height: $lineHeight;
+      margin-bottom: 45px;
+      max-width: 70%;
+      @media ($lg-min) {
+        max-width: 100%;
+      }
+      @media ($lg-max) {
+        font-size: 30px;
+      }
+      @media ($md-max) {
+        font-size: 20px;
+        margin-bottom: 30px;
+      }
+      @media ($xs-max) {
+        max-width: 100%;
+      }
+    }
+  }
+  .section__text {
+    color: #FFFFFF;
+    display: flex;
+    row-gap: 35px;
+    column-gap: 25px;
+    flex-direction: column;
+    @media ($md-max) {
+      flex-direction: row;
+    }
+    @media ($md-max) {
+      overflow-x: auto;
+      flex-wrap: nowrap;
+    }
+  }
+  .section__text-item {
+    font-size: 20px;
+    line-height: $lineHeight;
+    @media ($lg-max) {
+      font-size: 18px;
+    }
+    @media ($md-max) {
+      min-width: 48%;
+      font-size: 16px;
+    }
+    @media ($xs-max) {
+      min-width: 250px;
+    }
+  }
+  .section__bottom {
+    position: relative;
+    padding: 32px 0;
+    @media ($lg-min) {
+      margin-top: -147px;
+    }
+  }
+  .section__bottom-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 40%;
+  }
+  .section__feature {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    display: flex;
+    column-gap: 35px;
+    line-height: 150%;
+    @media ($md-max) {
+      flex-wrap: wrap;
+      column-gap: 25px;
+      row-gap: 24px;
+    }
+    @media ($xs-max) {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+    }
+  }
+  .section__feature-item {
+    width: 25%;
+    @media ($md-max) {
+      width: 48%;
+    }
+    @media ($xs-max) {
+      min-width: 250px;
+    }
+  }
+}

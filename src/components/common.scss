@@ -1,0 +1,42 @@
+@font-face{
+	font-family: "proximanova";
+	font-display: swap;
+	src: url("../fonts/proximanova-regular.woff2") format("woff2"), url("../fonts/proximanova-regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face{
+	font-family: "proximanova";
+	font-display: swap;
+	src: url("../fonts/proximanova-bold.woff2") format("woff2"), url("../fonts/proximanova-bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+}
+
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+	box-sizing: border-box;
+}
+
+body {
+	@include fontRegular;
+	color: $textColor;
+	font-size: 18px;
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+	@media ($md-max) {
+		font-size: 16px;
+	}
+}
+
+.container {
+	max-width: 1700px;
+	margin: auto;
+	padding: 0 50px;
+	@media ($xs-max) {
+		padding: 0 25px;
+	}
+}

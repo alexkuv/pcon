@@ -1,0 +1,7 @@
+.layout_tpl_2 {
+  grid-column-gap: 35px;
+  grid-row-gap: 25px;
+  @media ($sm-min) {
+    grid-template-columns: 1fr 1fr;
+  }
+}

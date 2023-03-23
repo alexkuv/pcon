@@ -1,0 +1,101 @@
+.form_view_choose {
+  display: flex;
+  flex-direction: column;
+  .form__block + .form__block {
+    margin-top: 45px;
+    @media ($md-max) {
+      margin-top: 45px;
+    }
+  }
+  .form__title {
+    color: $secondaryColor;
+    margin-bottom: 25px;
+  }
+  .form__body {
+    @media ($lg-min) {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0px, 1fr));
+      grid-gap: 35px;
+    }
+    @media ($xl-min) {
+      grid-template-columns: repeat(5, minmax(0px, 1fr));
+    }
+    @media ($md-max) {
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 35px;
+      justify-content: space-between;
+    }
+    @media ($xs-max) {
+      flex-direction: column;
+      row-gap: 25px;
+    }
+  }
+  .form__body_first {
+    .form__field:nth-child(1),
+    .form__field:nth-child(2) {
+      @media ($sm-min) and ($md-max) {
+        width: 49%;
+      }
+    }
+  }
+  .form__field {
+    @media ($md-max) {
+      width: 32%;
+    }
+    @media ($xs-max) {
+      width: 100%;
+    }
+  }
+  .form__field_md_full {
+    @media ($md-max) {
+      width: 100%;
+    }
+  }
+  .form__field-title {
+    margin-bottom: 5px;
+  }
+  .form__field_2-col {
+    grid-column: span 2;
+  }
+  .form__field-radio-wrap {
+    display: flex;
+    align-items: center;
+    @media ($xs-max) {
+      flex-wrap: wrap;
+    }
+  }
+  .form__field-radio_label {
+    margin-right: 32px;
+    @media ($xs-max) {
+      margin-right: 0;
+      width: 25%;
+    }
+  }
+  .form__field-radio_other {
+    display: flex;
+    align-items: center;
+    input {
+      margin-left: 15px;
+      max-width: 139px;
+    }
+    @media ($xs-max) {
+      margin-top: 20px;
+    }
+  }
+  .form__foot {
+    margin-top: 35px;
+    @media ($md-max) {
+      margin-top: 30px;
+    }
+    .form__field {
+      width: 100%;
+    }
+    .form__button {
+      margin-top: 35px;
+      @media ($md-max) {
+        margin-top: 30px;
+      }
+    }
+  }
+}

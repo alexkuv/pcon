@@ -1,0 +1,22 @@
+.section_view_description {
+  .section__wrapper {
+    padding-bottom: 30px;
+  } 
+  .section__title {
+    margin-bottom: 25px;
+  }
+  .section__text {
+    font-size: 20px;
+    line-height: $lineHeight;
+    @media ($md-max) {
+      font-size: 18px;
+    }
+    @media ($xs-max) {
+      font-size: 16px;
+    }
+  }
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
+}

@@ -1,0 +1,65 @@
+.section_view_doc {
+  .section__title {
+    margin-bottom: 90px;
+
+    @media ($md-max) {
+      margin-bottom: 40px;
+    }
+
+    @media ($xs-max) {
+      margin-bottom: 0px;
+    }
+  }
+
+  .section__content {
+    position: relative;
+    padding: 40px 40px 40px 0;
+    background-color: $secondaryColor;
+    color: #fff;
+    font-size: 25px;
+    line-height: $lineHeight;
+
+    @media ($md-max) {
+      font-size: 20px;
+      line-height: 130%;
+    }
+
+    @media ($sm-max) {
+      font-size: 16px;
+    }
+
+    @media ($xs-max) {
+      padding: 20px 0;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: -100vw;
+      background-color: inherit;
+      width: 100vw;
+      height: 100%;
+      z-index: -1;
+
+      @media ($xs-max) {
+        width: 100%;
+        left: -25px;
+      }
+    }
+
+    &::before {
+      @media ($xs-max) {
+        position: absolute;
+        content: '';
+        top: 0;
+        right: -25px;
+        background-color: inherit;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+
+    }
+  }
+}

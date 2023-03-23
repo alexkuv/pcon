@@ -1,0 +1,6 @@
+.layout_tpl_12 {
+  @media ($sm-min) {
+    grid-template-columns: repeat(12, minmax(0px, 1fr));
+    grid-column-gap: 35px;
+  }
+}

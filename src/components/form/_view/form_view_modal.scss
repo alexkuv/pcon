@@ -1,0 +1,23 @@
+.form_view_modal {
+  .form__body {
+    display: grid;
+    @media ($sm-min) {
+      grid-template-columns: repeat(2, minmax(0px, 1fr));
+    }
+    grid-row-gap: 20px;
+    grid-column-gap: 35px;
+    margin-bottom: 20px;
+    @media ($xs-max) {
+    }
+    .form__field_full {
+      @media ($sm-min) {
+        grid-column: span 2;
+      }
+    }
+  }
+  .form__footer {
+    .form__field {
+      margin-bottom: 30px;
+    }
+  }
+}

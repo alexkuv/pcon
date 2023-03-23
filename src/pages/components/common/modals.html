@@ -1,0 +1,110 @@
+<div class="modal modal_view_default" data-modal="order">
+  <div class="modal__inner">
+    <div class="modal__overlay"></div>
+    <div class="modal__content">
+      <div class="modal__close"></div>
+      <h3 class="modal__title">
+        Оставить заявку
+      </h3>
+      <div class="modal__desc">
+        Вертикальный бак-дозатор PROFIREX БДВ
+      </div>
+      <form class="form form_view_default form_view_modal" action="./server.php">
+        <div class="form__body">
+          <div class="form__field form__field_full">
+            <p class="form__field-title">Имя*</p>
+            <input class="form__input-text form-field form-field_required" name="user_name" type="text" placeholder="Например, Алексей">
+            <div class="err-message"></div>
+          </div>
+          <div class="form__field">
+            <p class="form__field-title">Телефон</p>
+            <input class="form__input-text form-field inputmask" type="tel" name="user_phone" placeholder="+7 (999) 999-99-99">
+            <div class="err-message"></div>
+          </div>
+          <div class="form__field">
+            <p class="form__field-title">E-mail*</p>
+            <input class="form__input-text form-field form-field_required_email" name="email" type="email" placeholder="example@mail.ru">
+            <div class="err-message"></div>
+          </div>
+          <div class="form__field form__field_full">
+            <p class="form__field-title">Наименование организации</p>
+            <input class="form__input-text form-field" name="org" type="text" placeholder="Введите">
+          </div>
+        </div>
+        <div class="form__footer">
+          <div class="form__field">
+            <label class="form__field-file-label">
+              <input class="form-field form-field_file" type="file" name="file">
+              <span class="field-text">Прикрепить фаил</span>
+            </label>
+            <div class="err-message"></div>
+          </div>
+          <div class="form__field">
+            <label class="form__field-checkbox_label">
+              <input class="form-field form-field_required_checkbox" type="checkbox" name="pol">
+              Отправляя форму, я соглашаюсь с <a href="#">обработкой персональных данных</a>
+            </label>
+            <div class="err-message"></div>
+          </div>
+        </div>
+        <button type="submit" class="button button_view_order">
+          <span class="button__text">Получить предложение</span>
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal modal_view_default" data-modal="consultation">
+  <div class="modal__inner">
+    <div class="modal__overlay"></div>
+    <div class="modal__content">
+      <div class="modal__close"></div>
+      <h3 class="modal__title">
+        Заявка на консультацию
+      </h3>
+      <form class="form form_view_default form_view_modal" action="./server.php">
+        <div class="form__body">
+          <div class="form__field">
+            <p class="form__field-title">Имя*</p>
+            <input class="form__input-text form-field form-field_required" name="user_name" type="text" placeholder="Например, Алексей">
+            <div class="err-message"></div>
+          </div>
+          <div class="form__field">
+            <p class="form__field-title">Телефон</p>
+            <input class="form__input-text form-field inputmask" type="tel" name="user_phone" placeholder="+7 (999) 999-99-99">
+            <div class="err-message"></div>
+          </div>
+          <div class="form__field">
+            <p class="form__field-title">E-mail*</p>
+            <input class="form__input-text form-field form-field_required_email" name="email" type="email" placeholder="example@mail.ru">
+            <div class="err-message"></div>
+          </div>
+        </div>
+        <div class="form__footer">
+          <div class="form__field">
+            <label class="form__field-checkbox_label">
+              <input class="form-field form-field_required_checkbox" type="checkbox" name="pol">
+              Отправляя форму, я соглашаюсь с <a href="#">обработкой персональных данных</a>
+            </label>
+            <div class="err-message"></div>
+          </div>
+          <button type="submit" class="button button_view_order">
+            <span class="button__text">Получить предложение</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal modal_view_default" data-modal="notify">
+  <div class="modal__innrer">
+    <div class="modal__overlay"></div>
+    <div class="modal__content">
+      <div class="modal__close"></div>
+      <h3 class="modal__title"></h3>
+      <div class="modal__desc"></div>
+    </div>
+  </div>
+</div>

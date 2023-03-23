@@ -1,0 +1,10 @@
+.section {
+  position: relative;
+  margin-bottom: 120px;
+  @media ($md-max) {
+    margin-bottom: 90px;
+  }
+  @media ($xs-max) {
+    margin-bottom: 60px;
+  }
+}
